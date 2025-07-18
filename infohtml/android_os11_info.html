@@ -3,69 +3,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Android 7 지원 종료 안내</title>
+  <title>Android 11 안내</title>
   <style>
     body {
       margin: 0;
       padding: 0;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      font-family: 'Pretendard', 'Segoe UI', sans-serif;
-      height: 100vh;
+      background: linear-gradient(to right, #e0f7fa, #e3f2fd);
+      font-family: 'Segoe UI', 'Pretendard', sans-serif;
       display: flex;
-      align-items: center;
       justify-content: center;
-      overflow: hidden;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
     }
 
     .card {
-      background: rgba(255, 255, 255, 0.08);
-      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.3);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
+      background: white;
       border-radius: 20px;
-      border: 1px solid rgba(255, 255, 255, 0.18);
       padding: 40px 30px;
-      color: #ffffff;
-      max-width: 90%;
-      width: 400px;
-      text-align: center;
-      animation: fadeIn 1.2s ease-out;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 90%;
+      animation: slideUp 0.8s ease-out;
     }
 
     .icon {
-      font-size: 60px;
+      font-size: 64px;
       margin-bottom: 20px;
-      animation: pop 0.6s ease;
     }
 
     h1 {
-      font-size: 22px;
-      margin-bottom: 16px;
-      font-weight: 600;
-      color: #f87171;
+      font-size: 24px;
+      color: #0d47a1;
+      margin-bottom: 12px;
     }
 
     p {
       font-size: 16px;
+      color: #444;
       line-height: 1.6;
-      color: #f3f4f6;
     }
 
     .highlight {
-      color: #93c5fd;
-      font-weight: 600;
+      color: #1976d2;
+      font-weight: bold;
     }
 
     .footer {
-      margin-top: 28px;
+      margin-top: 30px;
       font-size: 14px;
-      color: #cbd5e1;
+      color: #777;
     }
 
-    @keyframes fadeIn {
+    @keyframes slideUp {
       from {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(40px);
       }
       to {
         opacity: 1;
@@ -73,31 +66,37 @@
       }
     }
 
-    @keyframes pop {
-      0% {
-        transform: scale(0.6);
-        opacity: 0;
+    @media (max-width: 480px) {
+      .card {
+        padding: 30px 20px;
       }
-      100% {
-        transform: scale(1);
-        opacity: 1;
+
+      .icon {
+        font-size: 50px;
+      }
+
+      h1 {
+        font-size: 20px;
       }
     }
   </style>
 </head>
 <body>
   <div class="card">
-    <div class="icon">⚠️</div>
-    <h1>Android 7 지원 종료</h1>
+    <div class="icon">📱</div>
+    <h1>Android 11 이용 안내</h1>
     <p>
-      현재 사용 중인 <span class="highlight">Android 7</span> 버전은<br>
-      <span class="highlight">악보바다 앱의 공식 지원 대상에서 제외</span>되었습니다.
+      안녕하세요, <span class="highlight">악보바다</span>를 찾아주셔서 감사합니다.
     </p>
     <p>
-      보다 안전하고 원활한 사용을 위해<br />
-      <span class="highlight">Android 8 이상</span>의 기기 사용을 권장드립니다.
+      현재 사용 중인 <span class="highlight">Android 11</span>은<br/>
+      일부 기능이 원활하지 않을 수 있어요.
     </p>
-    <div class="footer">- 악보바다 운영팀 드림 -</div>
+    <p>
+      더 나은 경험을 위해<br/>
+      <span class="highlight">Android 13 이상</span>의 기기 사용을 권장드립니다.
+    </p>
+    <div class="footer">악보바다 운영팀 드림</div>
   </div>
 </body>
 </html>
