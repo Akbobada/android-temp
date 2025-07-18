@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>앗! 이건 오래됐어요 🐥</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #fffbe7;
+      font-family: 'Arial', 'Nanum Gothic', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .box {
+      background: #fff;
+      border: 5px dashed #fbbf24;
+      padding: 40px 25px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      max-width: 350px;
+      animation: float 2.5s ease-in-out infinite;
+    }
+
+    .emoji {
+      font-size: 64px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: 22px;
+      color: #f97316;
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #444;
+      line-height: 1.6;
+      margin-bottom: 8px;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #ef4444;
+    }
+
+    .footer {
+      margin-top: 24px;
+      font-size: 13px;
+      color: #666;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="emoji">🐣</div>
+    <h1>앗! 너무 오래된 OS네요</h1>
+    <p>현재 사용 중인 <span class="highlight">Android 7</span>은</p>
+    <p>지금은 조금... 오래된 친구예요 🐢</p>
+    <p>더 멋진 기능을 위해<br /><span class="highlight">Android 11 이상</span>으로 업그레이드해 주세요!</p>
+    <div class="footer">- 악보바다 운영팀 드림 -</div>
+  </div>
+</body>
+</html>
