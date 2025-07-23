@@ -4,7 +4,7 @@ android7:N
 android8:N
 android9:N
 android10:N
-android11:N
+android11:Y
 android12:N
 android13:N
 android14:N
