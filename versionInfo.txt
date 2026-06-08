@@ -1,5 +1,5 @@
 version:7.6
-popFlag:N
+popFlag:Y
 android7:N
 android8:N
 android9:N
